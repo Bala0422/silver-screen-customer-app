@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_page">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/payment_list"
+        />
+
+
+    <Button
+        android:id="@+id/payment_refresh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/payment_fragment"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/refresh"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_tv1"
+        android:text="Refresh"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/payment_refresh"
+        />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.silver_screen.Fragment_bottom"
+        android:id="@+id/payment_fragment"/>
+
+</RelativeLayout>
